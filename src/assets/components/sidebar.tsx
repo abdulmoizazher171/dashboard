@@ -12,7 +12,8 @@ import {
     SidebarMenu,
     SidebarMenuAction,
     SidebarMenuButton,
-    SidebarMenuItem
+    SidebarMenuItem,
+    SidebarSeparator
 } from "@/components/ui/sidebar"
 import { MoreHorizontal } from "lucide-react"
 
@@ -88,7 +89,7 @@ const footer = [
 
 export function AppSidebar() {
     return (
-        <Sidebar>
+        <Sidebar variant="sidebar">
             <SidebarHeader>
                 <SidebarMenu>
                     <SidebarMenuItem>
@@ -102,6 +103,7 @@ export function AppSidebar() {
                 </SidebarMenu>
 
             </SidebarHeader>
+            <SidebarSeparator />
             <SidebarContent>
                 <SidebarGroup>
                     <SidebarGroupLabel>Home</SidebarGroupLabel>
