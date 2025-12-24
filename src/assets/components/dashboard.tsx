@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 
 
 import Grid from "./Grid";
+import Chart from "./chart";
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <SidebarProvider>
@@ -25,6 +26,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         {/* 2. Main Content Area */}
         <main className="p-4 space-y-4">
            <Grid></Grid>
+           <Chart></Chart>
            {children}
         </main>
       </SidebarInset>
