@@ -1,5 +1,4 @@
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import type { Task } from "./Columns";
 import { columns, } from "./Columns";
 import { DataTable } from "./DataTable";

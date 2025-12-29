@@ -247,7 +247,18 @@ export function DataTable<TData, TValue>(
               </div>
 
               {/* NAV BUTTONS */}
-              <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-2">
+                <Button
+                  variant="outline"
+                  className="h-8 w-8 p-0"
+                  onClick={() => table.firstPage()}
+                  
+                  
+                >
+                  <span className="sr-only">Go to previous page</span>
+                  {"<<"}
+                </Button>
+             
                 <Button
                   variant="outline"
                   className="h-8 w-8 p-0"
@@ -265,6 +276,15 @@ export function DataTable<TData, TValue>(
                 >
                   <span className="sr-only">Go to next page</span>
                   {">"}
+                </Button>
+                <Button
+                  variant="outline"
+                  className="h-8 w-8 p-0"
+                  onClick={() => table.lastPage()}
+                  disabled={!table.getCanNextPage()}
+                >
+                  <span className="sr-only">Go to last page</span>
+                  {">>"}
                 </Button>
               </div>
             </div>
