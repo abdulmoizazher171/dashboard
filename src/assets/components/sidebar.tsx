@@ -1,4 +1,3 @@
-import { BarChart2, BarChart3, CreditCard, Database, Droplet, FileType, Folder, Forward, HelpCircle, Home, Inbox, LogOut, MessageSquareDot, Search, Trash2, User, User2, Users } from "lucide-react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import {
@@ -15,7 +14,7 @@ import {
     SidebarMenuItem,
     SidebarSeparator
 } from "@/components/ui/sidebar"
-import { MoreHorizontal } from "lucide-react"
+import { BarChart2, BarChart3, CreditCard, Database, Droplet, FileType, Folder, Forward, HelpCircle, Home, Inbox, LogOut, MessageSquareDot, MoreHorizontal, Search, Settings, Trash2, User, Users } from "lucide-react"
 
 
 // Menu items.
@@ -70,7 +69,7 @@ const footer = [
     {
         title: "Settings",
         url: "#",
-        icon: User2,
+        icon: Settings,
     },
     {
         title: "Help",

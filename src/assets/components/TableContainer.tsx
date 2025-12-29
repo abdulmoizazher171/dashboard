@@ -89,26 +89,44 @@ export default  function LoadTable() {
     target: 1500,
     limit: 1500,
     reviewer: "alex smith",
+
+
+  },
+
+
+  {
+    header: "Customer Success Playbook",
+    sectiontypes: "Support",
+    status: "In Process",
+    target: 40,
+    limit: 55,
+    reviewer: "alex smith",
+  },
+  {
+    header: "Database Schema Optimization",
+    sectiontypes: "Development",
+    status: "Done",
+    target: 10,
+    limit: 10,
+    reviewer: "jhon doe",
+  },
+  {
+    header: "Competitor Price Analysis",
+    sectiontypes: "Sales",
+    status: "Done",
+    target: 1500,
+    limit: 1500,
+    reviewer: "alex smith",
   }
 ];
   return (
     <div>
 
       
-        <Tabs defaultValue="table" className="w-full">
-            <TabsList>
-              <TabsTrigger value="table">Outline</TabsTrigger>
-              <TabsTrigger value="password">Past Performance</TabsTrigger>
-              <TabsTrigger value="kasdjf">Key personnel</TabsTrigger>
-              <TabsTrigger value="adsfasd">Focus documnet</TabsTrigger>
-            </TabsList>
-            <TabsContent value="table">
-              <DataTable columns={columns} data={tasks} />
-            </TabsContent>
-            <TabsContent value="password">
-              <div></div>
-            </TabsContent>
-          </Tabs>
+ <DataTable columns={columns} data={tasks} />
+
+      
+        
       
     </div>
   )
